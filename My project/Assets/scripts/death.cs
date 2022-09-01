@@ -11,4 +11,11 @@ public class death : MonoBehaviour
             levelManager.instance.Respawn();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D isTrigger) {
+        if(isTrigger.gameObject.CompareTag("offMap")) {
+            Destroy(gameObject);
+            levelManager.instance.Respawn();
+        }
+    }
 }
