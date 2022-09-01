@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class death : MonoBehaviour
 
@@ -9,13 +10,17 @@ public class death : MonoBehaviour
         if(collision.gameObject.CompareTag("kills")) {
             Destroy(gameObject);
             levelManager.instance.Respawn();
+            SceneManager.LoadScene(2);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D isTrigger) {
         if(isTrigger.gameObject.CompareTag("offMap")) {
             Destroy(gameObject);
             levelManager.instance.Respawn();
+             SceneManager.LoadScene(2);
         }
     }
+    
 }

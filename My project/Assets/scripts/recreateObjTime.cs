@@ -12,15 +12,15 @@ public class recreateObjTime : MonoBehaviour
     void Start()
     {
         GameObject NewLaser = Instantiate(laser);
-        NewLaser.transform.position = transform.position + new Vector3(Random.Range(-10.0f,10.0f),20,0);
+        NewLaser.transform.position = transform.position + new Vector3(Random.Range(-28.0f,28.0f),20,0);
     }
 
     // Update is called once per frame
     void Update()
     {if (timer > maxTimer){
         GameObject NewLaser = Instantiate(laser);
-        NewLaser.transform.position = transform.position + new Vector3(Random.Range(-28.0f,26.0f),25,0);
-        Destroy(NewLaser,3);
+        NewLaser.transform.position = transform.position + new Vector3(Random.Range(-38.0f,37.0f),25,0);
+        Destroy(NewLaser,10);
         timer=0;
 
     }
