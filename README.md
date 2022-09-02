@@ -20,4 +20,4 @@ Aqui sugere-se que sejam colocados ao menos os nomes de cada desenvolvedor envol
 - [Ian Lucca Soares Mesquita](https://github.com/IanLucca12)
 - [Carlos Eduardo](https://github.com/CaduRoriz)
 
-## 🎮Link do jogo(https://caduroriz.itch.io/citst)🎮
+## 🎮Link do jogo(https://caduroriz.itch.io/citst)
